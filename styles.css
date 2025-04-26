@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #0099ff;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #04381e;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #ff0000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Section Styling */
+section {
+  padding: 3rem 2rem;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+section h1 {
+  margin-bottom: 1rem;
+  color: #ff0000;
+}
+
+section p {
+  margin-bottom: 1rem;
+  color: #d0ff00;
+}
+
+/* Specific Color Changes for "Why Choose Us", "Our Services", and "Let’s Get Started" */
+#home h2, #home ul li, #services h1, #services ul li, #home p {
+  color: #0080ff; /* Blue color for specified sections */
+}
+
+/* Lists */
+.team-list, .services-list {
+  list-style: none;
+  margin-top: 1rem;
+  color: #00ff99;
+}
+
+/* Images */
+section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* Form */
+form {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ff0000;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #333;
+  color: rgb(255, 0, 0);
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #444;
+}
+
+/* Alert Button */
+button {
+  background-color: #ff6600;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff8533;
+}
+
+/* Footer */
+footer {
+  background-color: #544040;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  form {
+    padding: 0 1rem;
+  }
+}
